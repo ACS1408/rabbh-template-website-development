@@ -1,6 +1,18 @@
 .creative-slider {
+    &__wrap {
+        &.row {
+            > * {
+                @include max(575.98) {
+                    padding-inline: 0;
+                }
+            }
+        }
+    }
     &__image {
         @include aspectRatio(924, 700);
+        @include min-max(1200, 1419.98) {
+            min-height: 563px;
+        }
     }
     &-left {
         background-color: #000;
@@ -11,12 +23,14 @@
         position: relative;
     }
     &__textSlider {
-        position: absolute;
-        bottom: 20%;
-        left: 30px;
-        width: 100%;
-        z-index: 2;
-        transform: translateX(15%);
+        @include min(1200) {
+            position: absolute;
+            bottom: 20%;
+            left: 30px;
+            width: 100%;
+            z-index: 2;
+            transform: translateX(15%);
+        }
         .slide-card {
             background-color: #fff;
             padding: 30px;
@@ -24,21 +38,33 @@
         }
     }
     &-pagination {
-        position: absolute;
-        bottom: 30px;
-        left: 0;
-        text-align: right;
-        padding-right: 30px;
+        @include max(1199.98) {
+            flex: 1;
+            text-align: right;
+        }
+        @include min(1200) {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            text-align: right;
+            padding-right: 30px;
+        }
     }
     &-navigation {
-        position: absolute;
-        bottom: 30px;
-        left: 0;
-        text-align: left;
-        padding-left: 30px;
-        display: flex;
-        align-items: center;
-        z-index: 2;
+        @include max(1199.98) {
+            flex: 1;
+            text-align: left;
+        }
+        @include min(1200) {
+            position: absolute;
+            bottom: 30px;
+            left: 0;
+            text-align: left;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
         .creative-nav {
             width: 30px;
             height: 30px;

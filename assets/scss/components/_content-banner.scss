@@ -1,10 +1,17 @@
 .content-banner {
     position: relative;
     &__image {
-        @include aspectRatio(1320, 320);
+        height: 240px;
+        @include min(992) {
+            height: 320px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &__details {
-        max-width: 520px;
         position: absolute;
         top: 0;
         left: 0;
@@ -15,10 +22,22 @@
         justify-content: center;
         color: #fff;
         background-color: #00000090;
+        max-width: 100%;
+        @include min(992) {
+            max-width: 520px;
+        }
         p {
             &:last-of-type {
                 margin-bottom: 0;
             }
+        }
+    }
+}
+
+.section-content-banner {
+    .container-md {
+        @include max(767.98) {
+            padding: 0;
         }
     }
 }

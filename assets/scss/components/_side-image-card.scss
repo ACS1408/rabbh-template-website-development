@@ -1,6 +1,11 @@
 .side-image-card {
     &__image {
-        @include aspectRatio(768, 576);
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &__details {
         p {

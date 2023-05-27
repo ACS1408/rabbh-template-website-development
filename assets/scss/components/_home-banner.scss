@@ -44,20 +44,37 @@
                     height: 10px;
                 }
                 &-prev {
-                    left: -4vw;
+                    left: 5px;
+                    @include min(576) {
+                        left: -4vw;
+                    }
                     &::after {
                         border-left: 2px solid #000;
                         transform: translate(-30%, -50%) rotate(-45deg);
                     }
                 }
                 &-next {
-                    right: -4vw;
+                    right: 5px;
+                    @include min(576) {
+                        right: -4vw;
+                    }
                     &::after {
                         border-right: 2px solid #000;
                         transform: translate(-70%, -50%) rotate(45deg);
                     }
                 }
             }
+        }
+    }
+}
+
+@include max(575.98) {
+    .home-banner {
+        overflow: hidden;
+    }
+    .home-banner__slider {
+        &.swiper {
+            overflow: visible;
         }
     }
 }

@@ -167,12 +167,6 @@ input:-webkit-autofill:focus ~ button {
   }
 }
 
-@include min(1600) {
-  .container {
-    max-width: 1400px;
-  }
-}
-
 // common
 .template-slider {
   &-wrap {

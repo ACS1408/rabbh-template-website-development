@@ -1,9 +1,21 @@
 const bannerSlider = new Swiper(".home-banner__slider", {
-  slidesPerView: 4,
-  spaceBetween: 20,
+  slidesPerView: 1.2,
+  spaceBetween: 15,
   navigation: {
     prevEl: ".home-banner__slider ~ .swiper-button-prev",
     nextEl: ".home-banner__slider ~ .swiper-button-next",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 4,
+    },
   },
 });
 
@@ -16,21 +28,47 @@ templateSliders.forEach((slider, sliderIndex) => {
     .closest(".template-slider-wrap")
     .querySelector(".template-slider-navigation .swiper-nav-next");
   const tempSlider = new Swiper(slider, {
-    slidesPerView: 4,
-    spaceBetween: 20,
+    slidesPerView: 1.2,
+    spaceBetween: 15,
     navigation: {
       prevEl: prevArrow,
       nextEl: nextArrow,
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
     },
   });
 });
 
 const sideHeadSlider = new Swiper(".side-head-slider__slider", {
-  slidesPerView: 4,
+  slidesPerView: 1.2,
   spaceBetween: 8,
   navigation: {
     prevEl: ".side-head-slider__slider ~ .swiper-button-prev",
     nextEl: ".side-head-slider__slider ~ .swiper-button-next",
+  },
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
+    1600: {
+      slidesPerView: 4,
+    },
   },
 });
 

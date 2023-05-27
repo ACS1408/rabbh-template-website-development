@@ -17,7 +17,21 @@
             color: #fff;
         }
         .category-name {
-            font-size: size(20);
+            font-size: size(18);
+            @include min(992) {
+                font-size: size(20);
+            }
+        }
+    }
+}
+
+@include max(575.98) {
+    .section-categories {
+        overflow: hidden;
+    }
+    .category-slider {
+        &.swiper {
+            overflow: visible;
         }
     }
 }
