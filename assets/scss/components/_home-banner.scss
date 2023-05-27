@@ -1,0 +1,63 @@
+.home-banner {
+    &__image {
+        @include aspectRatio(1920, 675);
+        height: 576px;
+        margin-bottom: 20px;
+    }
+    &__thumbs {
+        @include aspectRatio(376, 130);
+        &--detail {
+            margin-top: 10px;
+            .product-name {
+                font-size: size(16);
+            }
+            .product-offer {
+                font-size: size(13);
+                margin-top: 4px;
+            }
+        }
+    }
+    &__slider {
+        &-wrap {
+            position: relative;
+            .swiper-button-disabled {
+                opacity: 0.5;
+            }
+            .swiper-button {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: 2;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                background-color: #dedede;
+                &::after {
+                    content: "";
+                    background-color: transparent;
+                    border-top: 2px solid #000;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform-origin: center;
+                    width: 10px;
+                    height: 10px;
+                }
+                &-prev {
+                    left: -4vw;
+                    &::after {
+                        border-left: 2px solid #000;
+                        transform: translate(-30%, -50%) rotate(-45deg);
+                    }
+                }
+                &-next {
+                    right: -4vw;
+                    &::after {
+                        border-right: 2px solid #000;
+                        transform: translate(-70%, -50%) rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}

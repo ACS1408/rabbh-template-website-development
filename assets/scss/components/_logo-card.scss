@@ -1,0 +1,11 @@
+.logo-card {
+    padding: 20px 30px;
+    &__image {
+        height: 50px;
+        max-width: 200px;
+        img {
+            object-fit: contain;
+            height: 100%;
+        }
+    }
+}

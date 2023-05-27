@@ -1,0 +1,117 @@
+// colors
+$primary-color: #422b72 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+
+// theme
+$text-color: var(--text-color) !default;
+
+// fonts
+$ff-primary: "Poppins", sans-serif;
+$font-size-root: 16px !default;
+$base-size: 16;
+
+// font weights
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-semibold: 600;
+$fw-bold: 700;
+$fw-extrabold: 800;
+$fw-black: 900;
+
+$font-weights: (
+  "light": $fw-light,
+  "regular": $fw-regular,
+  "medium": $fw-medium,
+  "semibold": $fw-semibold,
+  "bold": $fw-bold,
+  "extrabold": $fw-extrabold,
+  "black": $fw-black,
+);
+
+// breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1420px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+);
+
+// bootstrap reset variables
+$primary: $primary-color !default;
+
+$btn-padding-y: 18px;
+$btn-padding-x: 64.5px;
+$btn-padding-y-sm: 12px;
+$btn-padding-x-sm: 28px;
+$btn-font-family: $ff-primary;
+$btn-font-size: 16px;
+$btn-line-height: 1;
+$btn-white-space: nowrap;
+// $btn-border-radius: 100px !default;
+
+$headings-font-weight: $fw-medium !default;
+
+$variable-prefix: bs- !default;
+
+$enable-caret: false !default;
+$enable-rounded: false !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
+$enable-grid-classes: true !default;
+$enable-container-classes: true !default;
+$enable-cssgrid: false !default;
+$enable-button-pointers: true !default;
+$enable-rfs: true !default;
+$enable-validation-icons: false !default;
+$enable-negative-margins: false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities: true !default;
+
+// headings
+$h-sizes: (
+  1: (
+    null: 41,
+    768: 64,
+    1200: 105,
+    1600: 120,
+  ),
+  2: (
+    null: 24,
+    1200: 30,
+    1600: 40,
+  ),
+);
+
+// paragraphs
+$p-sizes: (
+  14: (
+    null: 14,
+  ),
+  16: (
+    null: 16,
+  ),
+  20: (
+    null: 16,
+    768: 18,
+    1600: 20,
+  ),
+  24: (
+    null: 20,
+    768: 24,
+  ),
+);

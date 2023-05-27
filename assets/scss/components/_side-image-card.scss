@@ -1,0 +1,12 @@
+.side-image-card {
+    &__image {
+        @include aspectRatio(768, 576);
+    }
+    &__details {
+        p {
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
