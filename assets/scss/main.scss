@@ -19,7 +19,7 @@
 @import "../../node_modules/bootstrap/scss/containers";
 @import "../../node_modules/bootstrap/scss/grid";
 // @import "../../node_modules/bootstrap/scss/tables";
-// @import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/forms";
 @import "../../node_modules/bootstrap/scss/buttons";
 @import "../../node_modules/bootstrap/scss/transitions";
 // @import "../../node_modules/bootstrap/scss/dropdown";
@@ -58,6 +58,10 @@
 @import "components/content-banner";
 @import "components/side-head-slider";
 @import "components/logo-card";
+@import "components/ca-forms";
+@import "components/pro-pg-1";
+@import "components/pro-pg-2";
+@import "components/pro-pg-3";
 
 // Resets
 html,
@@ -246,6 +250,43 @@ input:-webkit-autofill:focus ~ button {
             border-color: #fff !important;
           }
         }
+      }
+    }
+  }
+}
+
+.form {
+  &-label {
+    font-size: size(14);
+    margin-bottom: 3px;
+  }
+  &-group {
+    position: relative;
+  }
+  &-error {
+    font-size: size(12);
+    font-weight: $fw-regular;
+    color: #ff0000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    padding-top: 2px;
+  }
+  &-check {
+    &.check-bg {
+      background-color: #dedede;
+      padding: 15px 50px;
+    }
+  }
+}
+
+.link-wrap {
+  a {
+    @include noTouchDevices {
+      &:hover {
+        color: $primary-color;
+        text-decoration: underline;
       }
     }
   }
