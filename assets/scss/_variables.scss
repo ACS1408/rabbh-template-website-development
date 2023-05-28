@@ -1,5 +1,5 @@
 // colors
-$primary-color: #422b72 !default;
+$primary-color: #59d7d7 !default;
 $black: #000000 !default;
 $white: #ffffff !default;
 
@@ -100,15 +100,32 @@ $h-sizes: (
     1200: 28,
     1600: 34,
   ),
+  4: (
+    null: 20,
+    1200: 26,
+  ),
+  5: (
+    null: 18,
+    1200: 21,
+  ),
+  6: (
+    null: 18,
+  ),
 );
 
 // paragraphs
 $p-sizes: (
+  12: (
+    null: 12,
+  ),
   14: (
     null: 14,
   ),
   16: (
     null: 16,
+  ),
+  18: (
+    null: 18,
   ),
   20: (
     null: 16,

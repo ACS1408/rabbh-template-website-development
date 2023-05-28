@@ -112,3 +112,16 @@ const creativeTextSlider = new Swiper(".creative-slider__textSlider", {
 
 creativeImageSlider.controller.control = creativeTextSlider;
 creativeTextSlider.controller.control = creativeImageSlider;
+
+const productSlider = new Swiper(".product-slider", {
+  slidesPerView: 1.2,
+  spaceBetween: 8,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+  },
+});
